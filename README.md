@@ -11,7 +11,7 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 | [Edimax EW-7811Un](edimax-ew-7811un/edimax-ew-7811un.md) | rtl8192cu | Yes | Yes | 2.4Ghz | RPI Workaround              |
 | [OurLiNK](ourlink-150m/ourlink-150m.md) | rtl8192cu | Yes | Yes | 2.4Ghz | Available [adaFruit](https://www.adafruit.com/product/1012) |
 | [Alfa AWUS036H](alfa-AWUS036H/alfa-AWUS036H.md) | rt2800usb | Yes | Yes | 2.4Ghz | Detachable Antenna |
-| ASUS USB-N14 | | | | Reported Meshable, need confirmation |
+| ASUS USB-N14 | | | || Reported Meshable, need confirmation |
 
 ## Bad Devices 
 | Device                    | Driver       | 802.11s | AdHoc | Band | Notes      |
