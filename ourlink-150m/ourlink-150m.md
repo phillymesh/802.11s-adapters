@@ -1,11 +1,13 @@
-# Edimax EW-7811Un
+# Edimax OURLiNK 150m
+Common where raspberry 1 and 2s are sold
+
 
 ```
 $ iw list 
 ```
 
 ```
-Wiphy phy1
+Wiphy phy3
         max # scan SSIDs: 4
         max scan IEs length: 2257 bytes
         max # sched scan SSIDs: 0
@@ -78,8 +80,8 @@ Wiphy phy1
                         * 2452 MHz [9] (20.0 dBm)
                         * 2457 MHz [10] (20.0 dBm)
                         * 2462 MHz [11] (20.0 dBm)
-                        * 2467 MHz [12] (20.0 dBm)
-                        * 2472 MHz [13] (20.0 dBm)
+                        * 2467 MHz [12] (disabled)
+                        * 2472 MHz [13] (disabled)
                         * 2484 MHz [14] (disabled)
         Supported commands:
                  * new_interface
@@ -150,45 +152,19 @@ Wiphy phy1
         Driver supports full state transitions for AP/GO clients
         Driver supports a userspace MPM
         Device supports configuring vdev MAC-addr on create.
+
 ```
 ```
 $ lshw -C network
 ```
 
 ```
-*-network:3
+ *-network:3
        description: Wireless interface
        physical id: 5
        bus info: usb@1:1.4
        logical name: wlan1
-       serial: 74:da:38:d6:05:cc
+       serial: 00:e0:4c:0b:ef:d1
        capabilities: ethernet physical wireless
        configuration: broadcast=yes driver=rtl8192cu driverversion=4.9.59-v7+ firmware=N/A link=no multicast=yes wireless=IEEE 802.11
-```
-
-**NOTE** Raspberry Pi blacklists but rtl8192cu driver in favour of 8192cu Below is the result if you do not have the correct driver loaded
-
-To unblack list the driver
-Comment out the line in  ```/etc/modprobe.d/blacklist-rtl8192cu.conf``` and reboot
-
-
-```
-$ iw list 
-
-```
-
-```
-$ lshw -C network
-  *-usb:2
-       description: Wireless interface
-       product: 802.11n WLAN Adapter
-       vendor: Realtek
-       physical id: 3
-       bus info: usb@1:1.3
-       logical name: wlan0
-       version: 2.00
-       serial: 00e04c000001
-       capabilities: usb-2.00 ethernet physical wireless
-       configuration: broadcast=yes driver=rtl8192cu maxpower=500mA 
-multicast=yes speed=480Mbit/s wireless=unassociated
 ```

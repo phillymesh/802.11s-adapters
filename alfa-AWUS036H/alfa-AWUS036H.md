@@ -1,11 +1,12 @@
-# Edimax EW-7811Un
+# Alfa Networks AWUS036H
+Is B/G only has an N version  AWUS036NH with differnt chipset but 2000milla wat power.
 
 ```
 $ iw list 
 ```
 
 ```
-Wiphy phy1
+Wiphy phy4
         max # scan SSIDs: 4
         max scan IEs length: 2257 bytes
         max # sched scan SSIDs: 0
@@ -13,7 +14,6 @@ Wiphy phy1
         max # scan plans: 1
         max scan plan interval: -1
         max scan plan iterations: 0
-        RTS threshold: 2347
         Retry short limit: 7
         Retry long limit: 4
         Coverage class: 0 (up to 0m)
@@ -26,38 +26,36 @@ Wiphy phy1
                 * CCMP-256 (00-0f-ac:10)
                 * GCMP-128 (00-0f-ac:8)
                 * GCMP-256 (00-0f-ac:9)
-                * CMAC (00-0f-ac:6)
-                * CMAC-256 (00-0f-ac:13)
-                * GMAC-128 (00-0f-ac:11)
-                * GMAC-256 (00-0f-ac:12)
         Available Antennas: TX 0 RX 0
         Supported interface modes:
                  * IBSS
                  * managed
                  * AP
                  * AP/VLAN
+                 * WDS
                  * monitor
                  * mesh point
-                 * P2P-client
-                 * P2P-GO
         Band 1:
-                Capabilities: 0x186e
+                Capabilities: 0x17e
                         HT20/HT40
                         SM Power Save disabled
+                        RX Greenfield
                         RX HT20 SGI
                         RX HT40 SGI
-                        No RX STBC
-                        Max AMSDU length: 7935 bytes
-                        DSSS/CCK HT40
+                        RX STBC 1-stream
+                        Max AMSDU length: 3839 bytes
+                        No DSSS/CCK HT40
                 Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
-                Minimum RX AMPDU time spacing: 16 usec (0x07)
-                HT Max RX data rate: 150 Mbps
-                HT TX/RX MCS rate indexes supported: 0-7, 32
+                Minimum RX AMPDU time spacing: 2 usec (0x04)
+                HT RX MCS rate indexes supported: 0-7, 32
+                TX unequal modulation not supported
+                HT TX Max spatial streams: 1
+                HT TX MCS rate indexes supported may differ
                 Bitrates (non-HT):
                         * 1.0 Mbps
-                        * 2.0 Mbps
-                        * 5.5 Mbps
-                        * 11.0 Mbps
+                        * 2.0 Mbps (short preamble supported)
+                        * 5.5 Mbps (short preamble supported)
+                        * 11.0 Mbps (short preamble supported)
                         * 6.0 Mbps
                         * 9.0 Mbps
                         * 12.0 Mbps
@@ -67,19 +65,19 @@ Wiphy phy1
                         * 48.0 Mbps
                         * 54.0 Mbps
                 Frequencies:
-                        * 2412 MHz [1] (20.0 dBm)
-                        * 2417 MHz [2] (20.0 dBm)
-                        * 2422 MHz [3] (20.0 dBm)
-                        * 2427 MHz [4] (20.0 dBm)
-                        * 2432 MHz [5] (20.0 dBm)
-                        * 2437 MHz [6] (20.0 dBm)
-                        * 2442 MHz [7] (20.0 dBm)
-                        * 2447 MHz [8] (20.0 dBm)
-                        * 2452 MHz [9] (20.0 dBm)
-                        * 2457 MHz [10] (20.0 dBm)
-                        * 2462 MHz [11] (20.0 dBm)
-                        * 2467 MHz [12] (20.0 dBm)
-                        * 2472 MHz [13] (20.0 dBm)
+                        * 2412 MHz [1] (30.0 dBm)
+                        * 2417 MHz [2] (30.0 dBm)
+                        * 2422 MHz [3] (30.0 dBm)
+                        * 2427 MHz [4] (30.0 dBm)
+                        * 2432 MHz [5] (30.0 dBm)
+                        * 2437 MHz [6] (30.0 dBm)
+                        * 2442 MHz [7] (30.0 dBm)
+                        * 2447 MHz [8] (30.0 dBm)
+                        * 2452 MHz [9] (30.0 dBm)
+                        * 2457 MHz [10] (30.0 dBm)
+                        * 2462 MHz [11] (30.0 dBm)
+                        * 2467 MHz [12] (disabled)
+                        * 2472 MHz [13] (disabled)
                         * 2484 MHz [14] (disabled)
         Supported commands:
                  * new_interface
@@ -96,7 +94,6 @@ Wiphy phy1
                  * disassociate
                  * join_ibss
                  * join_mesh
-                 * remain_on_channel
                  * set_tx_bitrate_mask
                  * frame
                  * frame_wait_cancel
@@ -132,7 +129,9 @@ Wiphy phy1
         software interface modes (can always be added):
                  * AP/VLAN
                  * monitor
-        interface combinations are not supported
+        valid interface combinations:
+                 * #{ AP, mesh point } <= 8,
+                   total <= 8, #channels <= 1
         HT Capability overrides:
                  * MCS: ff ff ff ff ff ff ff ff ff ff
                  * maximum A-MSDU length
@@ -156,39 +155,12 @@ $ lshw -C network
 ```
 
 ```
-*-network:3
+ *-network:3
        description: Wireless interface
        physical id: 5
-       bus info: usb@1:1.4
+       bus info: usb@1:1.2
        logical name: wlan1
-       serial: 74:da:38:d6:05:cc
+       serial: e8:4e:06:4b:c7:28
        capabilities: ethernet physical wireless
-       configuration: broadcast=yes driver=rtl8192cu driverversion=4.9.59-v7+ firmware=N/A link=no multicast=yes wireless=IEEE 802.11
-```
-
-**NOTE** Raspberry Pi blacklists but rtl8192cu driver in favour of 8192cu Below is the result if you do not have the correct driver loaded
-
-To unblack list the driver
-Comment out the line in  ```/etc/modprobe.d/blacklist-rtl8192cu.conf``` and reboot
-
-
-```
-$ iw list 
-
-```
-
-```
-$ lshw -C network
-  *-usb:2
-       description: Wireless interface
-       product: 802.11n WLAN Adapter
-       vendor: Realtek
-       physical id: 3
-       bus info: usb@1:1.3
-       logical name: wlan0
-       version: 2.00
-       serial: 00e04c000001
-       capabilities: usb-2.00 ethernet physical wireless
-       configuration: broadcast=yes driver=rtl8192cu maxpower=500mA 
-multicast=yes speed=480Mbit/s wireless=unassociated
+       configuration: broadcast=yes driver=rt2800usb driverversion=4.9.59-v7+ firmware=0.36 ip=169.254.212.153 link=yes multicast=yes wireless=IEEE 802.11
 ```
