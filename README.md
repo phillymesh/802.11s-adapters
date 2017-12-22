@@ -6,9 +6,9 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 ## Good Devices
 
 * TP-LINK TL-WN722N v1
-* [Toplinkst TOP-GS07](toplinkst-top-gs07/toplinkst-top-gs07)
+* [Toplinkst TOP-GS07](toplinkst-top-gs07/toplinkst-top-gs07.md)
 
 ## Bad Devices
 
-* [Edimax EW-7811Un](edimax-ew-7811un/edimax-ew-7811un)
+* [Edimax EW-7811Un](edimax-ew-7811un/edimax-ew-7811un.md)
 * TP-LINK TL-WN722N v2
