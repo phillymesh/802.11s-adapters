@@ -1,5 +1,5 @@
 # Alfa Networks AWUS036H
-
+Is B/G only has an N version  AWUS036NH with differnt chipset but 2000milla wat power.
 
 ```
 $ iw list 
