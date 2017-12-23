@@ -13,11 +13,17 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 | [Alfa AWUS036H](alfa-AWUS036H/alfa-AWUS036H.md) | rt2800usb | Yes | Yes | 2.4Ghz | Detachable Antenna |
 | ASUS USB-N14 | | | || Reported Meshable, need confirmation |
 
+
+## Bad Devices That could still be usefull (AP, AdHoc, etc)
+| Device                    | Driver       | 802.11s | AdHoc | Band | Notes      |
+| :------------------------ | :----------- | :------ | :-----| :----| :----------|
+| Raspberry Pi 3 Onboard | brcmfmac | No | Yes | 2.4Ghz | |
+| Orange Pi Zero Onboard | xradio_wlan | No | Yes | 2.4Ghz | Reports 80211s but dot not actually work. Poor quality driver TOPS 10Mbps|
+| Tenda u12              | rtl8812AU | No | Yes | 2.4/5gc | AC1300 Device, [Non Standard Driver](https://github.com/xxNull-lsk/rtl8812AU/tree/2087f8addfa255c4c452260d4abc1645293158d4) |
+
 ## Bad Devices 
 | Device                    | Driver       | 802.11s | AdHoc | Band | Notes      |
 | :------------------------ | :----------- | :------ | :-----| :----| :----------|
 | TP-LINK TL-WN722N v2      | No Known Drivers | | | 2.5/5Ghz | |
-| TP-Link AC600 Archer T2UH | mt7610u | | | 2.5/5Ghz| [Non Standard Driver](https://github.com/ulli-kroll/mt7610u) , no 80211 Support |
-| Raspberry Pi 3 Onboard | brcmfmac | No | Yes | 2.4Ghz | |
-| Orange Pi Zero | xradio | No | Yes | 2.4Ghz | Reports 80211s but dot not actually work.<br> Poor quality driver TOPS 10Mbps|
-| Orange Pi Lite Onboard | | No | No | 2.4Ghz | ONLY works with old API, client mode ONLY |
+| [TP-Link AC600 Archer T2UH](tplink-ac600-t2uh/tplink-ac600-t2uh.md) | mt7610u | No | | 2.5/5Ghz| [Non Standard Driver](https://github.com/ulli-kroll/mt7610u) , no 80211s Support |
+| Orange Pi Lite Onboard | rtl8189fs | No | No | 2.4Ghz | ONLY works with old wireless API, client mode ONLY |
