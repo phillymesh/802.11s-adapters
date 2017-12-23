@@ -17,7 +17,7 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 | Device                    | Driver       | 802.11s | AdHoc | Band | Notes      |
 | :------------------------ | :----------- | :------ | :-----| :----| :----------|
 | TP-LINK TL-WN722N v2      | No Known Drivers | | | 2.5/5Ghz | |
-| TP-Link AC600 Archer T2UH | mt7610u | | | 2.5/5Ghz| [Non Standard Driver](https://github.com/ulli-kroll/mt7610u) , no 80211 Support |
+| [TP-Link AC600 Archer T2UH](tplink-ac600-t2uh/tplink-ac600-t2uh.md) | mt7610u | | | 2.5/5Ghz| [Non Standard Driver](https://github.com/ulli-kroll/mt7610u) , no 80211 Support |
 | Raspberry Pi 3 Onboard | brcmfmac | No | Yes | 2.4Ghz | |
 | Orange Pi Zero | xradio | No | Yes | 2.4Ghz | Reports 80211s but dot not actually work.<br> Poor quality driver TOPS 10Mbps|
 | Orange Pi Lite Onboard | | No | No | 2.4Ghz | ONLY works with old API, client mode ONLY |
