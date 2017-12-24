@@ -7,9 +7,9 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 | Device                    | Driver       | 802.11s | AdHoc | Band | Notes      |
 | :------------------------ | :----------- | :------ | :-----| :----| :----------|
 | [TP-LINK TL-WN722N v1](tplink-tl-wn722n-v1/tplink-tl-wn722n-v1.md)| ath9k_htc | Yes | Yes | 2.4Ghz |Detachable Antenna |
-| [Toplinkst TOP-GS07](toplinkst-top-gs07/toplinkst-top-gs07.md)    | rt2800usb | Yes | Yes | 2.4/5Ghz | Gets Very Hot      |
-| [Edimax EW-7811Un](edimax-ew-7811un/edimax-ew-7811un.md) | rtl8192cu | Yes | Yes | 2.4Ghz | RPI Workaround              |
-| [OurLiNK](ourlink-150m/ourlink-150m.md) | rtl8192cu | Yes | Yes | 2.4Ghz | Available [adaFruit](https://www.adafruit.com/product/1012) |
+| [Toplinkst TOP-GS07](toplinkst-top-gs07/toplinkst-top-gs07.md)    | rt2800usb | Yes | Yes | 2.4/5Ghz |Gets Very Hot      |
+| [Edimax EW-7811Un](edimax-ew-7811un/edimax-ew-7811un.md) | rtl8192cu | Yes | Yes | 2.4Ghz | RPI Workaround for blacklisted module. Works on Stretch |
+| [OURLiNK](ourlink-150m/ourlink-150m.md) | rtl8192cu | Yes | Yes | 2.4Ghz | Available [adaFruit](https://www.adafruit.com/product/1012) |
 | [Alfa AWUS036H](alfa-AWUS036H/alfa-AWUS036H.md) | rt2800usb | Yes | Yes | 2.4Ghz | Detachable Antenna |
 | ASUS USB-N14 | | | || Reported Meshable, need confirmation |
 
@@ -18,8 +18,8 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 | Device                    | Driver       | 802.11s | AdHoc | Band | Notes      |
 | :------------------------ | :----------- | :------ | :-----| :----| :----------|
 | Raspberry Pi 3 Onboard | brcmfmac | No | Yes | 2.4Ghz | |
-| Orange Pi Zero Onboard | xradio_wlan | No | Yes | 2.4Ghz | Reports 80211s but dot not actually work. Poor quality driver TOPS 10Mbps|
-| Tenda u12              | rtl8812AU | No | Yes | 2.4/5gc | AC1300 Device, [Non Standard Driver](https://github.com/xxNull-lsk/rtl8812AU/tree/2087f8addfa255c4c452260d4abc1645293158d4) |
+| Orange Pi Zero Onboard | xradio_wlan | No | Yes | 2.4Ghz | Reports 80211s but does not actually work. Poor quality driver TOPS 10Mbps|
+| Tenda U112              | rtl8812au | No | Yes | 2.4/5gc | AC1300 Device, [Non Standard Driver](https://github.com/xxNull-lsk/rtl8812AU/tree/2087f8addfa255c4c452260d4abc1645293158d4) |
 
 ## Bad Devices 
 | Device                    | Driver       | 802.11s | AdHoc | Band | Notes      |
