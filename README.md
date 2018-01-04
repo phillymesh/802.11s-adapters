@@ -24,6 +24,7 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 ## Bad Devices 
 | Device                    | Driver       | 802.11s | AdHoc | Band | Notes      |
 | :------------------------ | :----------- | :------ | :-----| :----| :----------|
-| TP-LINK TL-WN722N v2      | No Known Drivers | | | 2.5/5Ghz | |
+| TP-Link TL-WN722N v2      | No Known Drivers | | | 2.5/5Ghz | |
 | [TP-Link AC600 Archer T2UH](tplink-ac600-t2uh/tplink-ac600-t2uh.md) | mt7610u | No | | 2.5/5Ghz| [Non Standard Driver](https://github.com/ulli-kroll/mt7610u) , no 80211s Support |
+| TP-Link TL-WN725N          | r8188eu | No | No | 2.4Ghz | ONLY works with old wireless API, client mode ONLY | 
 | Orange Pi Lite Onboard | rtl8189fs | No | No | 2.4Ghz | ONLY works with old wireless API, client mode ONLY |
