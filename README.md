@@ -8,6 +8,7 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 | :------------------------ | :----------- | :------ | :-----| :----| :----------|
 | [TP-LINK TL-WN722N v1](tplink-tl-wn722n-v1/tplink-tl-wn722n-v1.md)| ath9k_htc | Yes | Yes | 2.4Ghz |Detachable Antenna |
 | [Toplinkst TOP-GS07](toplinkst-top-gs07/toplinkst-top-gs07.md)    | rt2800usb | Yes | Yes | 2.4/5Ghz |Gets Very Hot      |
+| [Toplinkst RT5572](toplinkst-rt5572/toplinkst-top-5m01.md) | rt2800usb | Yes | | 2.5/| Headers for USB (no actualy usb plug) Similar to GS07, Daul Antenna not as hot |
 | [Edimax EW-7811Un](edimax-ew-7811un/edimax-ew-7811un.md) | rtl8192cu | Yes | Yes | 2.4Ghz | RPI Workaround for blacklisted module. Works on Stretch |
 | [OURLiNK](ourlink-150m/ourlink-150m.md) | rtl8192cu | Yes | Yes | 2.4Ghz | Available [adaFruit](https://www.adafruit.com/product/1012) |
 | [Alfa AWUS036H](alfa-AWUS036H/alfa-AWUS036H.md) | rt2800usb | Yes | Yes | 2.4Ghz | Detachable Antenna |
@@ -26,5 +27,6 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 | :------------------------ | :----------- | :------ | :-----| :----| :----------|
 | TP-Link TL-WN722N v2      | No Known Drivers | | | 2.5/5Ghz | |
 | [TP-Link AC600 Archer T2UH](tplink-ac600-t2uh/tplink-ac600-t2uh.md) | mt7610u | No | | 2.5/5Ghz| [Non Standard Driver](https://github.com/ulli-kroll/mt7610u) , no 80211s Support |
+| [Toplinkst TOP-5M01](toplinkst-top-5m01/toplinkst-top-5m01.md) | mt7610u | No | | 2.5/5Ghz| [Non Standard Driver](https://github.com/ulli-kroll/mt7610u) , Support, not working |
 | TP-Link TL-WN725N          | r8188eu | No | No | 2.4Ghz | ONLY works with old wireless API, client mode ONLY | 
 | Orange Pi Lite Onboard | rtl8189fs | No | No | 2.4Ghz | ONLY works with old wireless API, client mode ONLY |

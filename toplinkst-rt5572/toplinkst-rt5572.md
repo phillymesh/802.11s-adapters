@@ -1,0 +1,1 @@
+[DataSheet](RT5572 wifi module Approvesheet.pdf)
