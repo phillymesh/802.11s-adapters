@@ -1,10 +1,10 @@
-#Toplinkst TOP-GS07
+# Toplinkst TOP-GS07
 
 ## Notes
-Gets very hot  
-If plugged directly into a USB port of a SCB it can radiate the heat into the board  
-Possible Issue of  the on board ceramic antenna may be used instead of the external antenna  
-If actively cooled (Removed from case and fan blowing on it) performs well in close proximity with stock antenna
+* Gets very hot  
+ * If plugged directly into a USB port of a SCB it can radiate the heat into the board  
+* Possible issue where on board ceramic antenna may be in use instead of the external antenna  
+* If actively cooled (Removed from plastic case and fan blowing on it) performs well in close proximity with stock antenna
 
 ## Specs
 ``` 
