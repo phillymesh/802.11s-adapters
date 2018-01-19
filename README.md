@@ -11,7 +11,8 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 | [Toplinkst RT5572](toplinkst-rt5572/toplinkst-top-5m01.md) | rt2800usb | Yes | Yes | 2.5/5Ghz | Headers for USB (no actualy usb plug) Similar to GS07, Daul Antenna not as hot |
 | [Edimax EW-7811Un](edimax-ew-7811un/edimax-ew-7811un.md) | rtl8192cu | Yes | Yes | 2.4Ghz | RPI Workaround for blacklisted module. Works on Stretch |
 | [OURLiNK](ourlink-150m/ourlink-150m.md) | rtl8192cu | Yes | Yes | 2.4Ghz | Available [adaFruit](https://www.adafruit.com/product/1012) |
-| [Alfa AWUS036H](alfa-AWUS036H/alfa-AWUS036H.md) | rt2800usb | Yes | Yes | 2.4Ghz | Detachable Antenna |
+| [Alfa AWUS036H](alfa-awus036h/alfa-awus036h.md) | rt2800usb | Yes | Yes | 2.4Ghz | Detachable Antenna, b,g only, 1000mw |
+| [Alfa AWUS036NH](alfa-awus036h/alfa-awus036nh.md) | rt2800usb | Yes | Yes | 2.4Ghz | Detachable Antenna b,g,n, 2000mw|
 | ASUS USB-N14 | | | || Reported Meshable, need confirmation |
 
 

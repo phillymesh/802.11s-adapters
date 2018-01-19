@@ -1,13 +1,15 @@
-# Alfa Networks AWUS036H
+# Alfa Networks AWUS036NH
+
+![Alfa AWUS036NG](alfa-awus036nh.jpg)
 
 ## Notes
 
 High powered card running at 1000mW  
 Great for powering YAGI antennas  
-This is the B G only version, the AWUS036NH and supports B,G and N and runs at 2000mW  
-The device is advertised as 1000mW (~30dBm)
+This is the N version of AWUS036H and supports B,G and N 
+The device is advertised as 2000mW (~33dBm) however the Linux database usually limits this to 1000mw (20dBm) for legal reasons  
 
-More Info: [Wiki Dev](https://wikidevi.com/wiki/ALFA_Network_AWUS036H)
+More Info: [Wiki Dev](https://wikidevi.com/wiki/ALFA_Network_AWUS036NH)
 
 ## Specs
 
@@ -16,33 +18,26 @@ $ iw list
 ```
 
 ```
-Wiphy phy4
+Wiphy phy1
         max # scan SSIDs: 4
         max scan IEs length: 2257 bytes
-        max # sched scan SSIDs: 0
-        max # match sets: 0
-        max # scan plans: 1
-        max scan plan interval: -1
-        max scan plan iterations: 0
-        Retry short limit: 7
-        Retry long limit: 4
+        Retry short long limit: 2
         Coverage class: 0 (up to 0m)
         Device supports RSN-IBSS.
         Supported Ciphers:
                 * WEP40 (00-0f-ac:1)
                 * WEP104 (00-0f-ac:5)
                 * TKIP (00-0f-ac:2)
-                * CCMP-128 (00-0f-ac:4)
-                * CCMP-256 (00-0f-ac:10)
-                * GCMP-128 (00-0f-ac:8)
-                * GCMP-256 (00-0f-ac:9)
+                * CCMP (00-0f-ac:4)
+                * 00-0f-ac:10
+                * GCMP (00-0f-ac:8)
+                * 00-0f-ac:9
         Available Antennas: TX 0 RX 0
         Supported interface modes:
                  * IBSS
                  * managed
                  * AP
                  * AP/VLAN
-                 * WDS
                  * monitor
                  * mesh point
         Band 1:
@@ -55,12 +50,9 @@ Wiphy phy4
                         RX STBC 1-stream
                         Max AMSDU length: 3839 bytes
                         No DSSS/CCK HT40
-                Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+                Maximum RX AMPDU length 32767 bytes (exponent: 0x002)
                 Minimum RX AMPDU time spacing: 2 usec (0x04)
-                HT RX MCS rate indexes supported: 0-7, 32
-                TX unequal modulation not supported
-                HT TX Max spatial streams: 1
-                HT TX MCS rate indexes supported may differ
+                HT TX/RX MCS rate indexes supported: 0-7, 32
                 Bitrates (non-HT):
                         * 1.0 Mbps
                         * 2.0 Mbps (short preamble supported)
@@ -115,9 +107,10 @@ Wiphy phy4
                  * register_beacons
                  * start_p2p_device
                  * set_mcast_rate
-                 * set_qos_map
                  * connect
                  * disconnect
+                 * Unknown command (104)
+                 * Unknown command (121)
         Supported TX frame types:
                  * IBSS: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
                  * managed: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
@@ -158,19 +151,18 @@ Wiphy phy4
         Device supports per-vif TX power setting
         Driver supports full state transitions for AP/GO clients
         Driver supports a userspace MPM
-        Device supports configuring vdev MAC-addr on create.
 ```
 ```
 $ lshw -C network
 ```
 
 ```
- *-network:3
+  *-network:2
        description: Wireless interface
-       physical id: 5
-       bus info: usb@1:1.2
+       physical id: 8
+       bus info: usb@1:1
        logical name: wlan1
-       serial: e8:4e:06:4b:c7:28
+       serial: 00:c0:ca:92:5b:23
        capabilities: ethernet physical wireless
-       configuration: broadcast=yes driver=rt2800usb driverversion=4.9.59-v7+ firmware=0.36 ip=169.254.212.153 link=yes multicast=yes wireless=IEEE 802.11
+       configuration: broadcast=yes driver=rt2800usb driverversion=4.11.8-sun8i firmware=0.36 link=yes multicast=yes wireless=IEEE 802.11
 ```
