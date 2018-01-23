@@ -1,5 +1,11 @@
+# Net Core NW392 AC
 
-Driver: https://github.com/diederikdehaas/rtl8812AU
+## Notes
+Adhoc mode didnt want to come up, Failed on join when ht40+ was used, if removed no error but did not display channel it was on or make a connection.
+
+More Info: [Driver](https://github.com/diederikdehaas/rtl8812AU)
+
+## Specs
 
 ```
 iw phy0 info
