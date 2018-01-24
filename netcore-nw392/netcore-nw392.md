@@ -3,8 +3,32 @@
 ## Notes
 Adhoc mode didnt want to come up, Failed on join when ht40+ was used, if removed no error but did not display channel it was on or make a connection.
 
-More Info: [Driver](https://github.com/diederikdehaas/rtl8812AU)
+More Info: [Driver](https://github.com/diederikdehaas/rtl8812AU) [Driver 2](https://github.com/abperiasamy/rtl8812AU_8821AU_linux)
 
+**ISSUE** Joining Ad Hoc crashes with the following
+```
+[942394.013602] ------------[ cut here ]------------
+[942394.013627] WARNING: CPU: 5 PID: 17863 at /build/linux-hwe-vH8Hlo/linux-hwe-4.10.0/net/wireless/ibss.c:68 cfg80211_ibss_joined+0x162/0x170 [cfg80211]
+
+[942394.013690] Call Trace:
+[942394.013696]  dump_stack+0x63/0x90
+[942394.013699]  __warn+0xcb/0xf0
+[942394.013700]  warn_slowpath_null+0x1d/0x20
+[942394.013715]  cfg80211_ibss_joined+0x162/0x170 [cfg80211]
+[942394.013746]  rtw_cfg80211_ibss_indicate_connect+0x12f/0x139 [rtl8812au]
+[942394.013772]  rtw_os_indicate_connect+0x20/0x5c [rtl8812au]
+[942394.013791]  rtw_indicate_connect+0x30/0x48 [rtl8812au]
+[942394.013810]  start_create_ibss+0x138/0x15d [rtl8812au]
+[942394.013829]  createbss_hdl+0xf7/0x101 [rtl8812au]
+[942394.013842]  rtw_cmd_thread+0x28e/0x3a7 [rtl8812au]
+[942394.013845]  kthread+0x109/0x140
+[942394.013858]  ? rtw_stop_cmd_thread+0x54/0x54 [rtl8812au]
+[942394.013861]  ? kthread_create_on_node+0x60/0x60
+[942394.013864]  ret_from_fork+0x2c/0x40
+[942394.013866] ---[ end trace 89d93eaea37fa2d1 ]---
+[942394.013867] RTL871X: assoc success
+[942394.013886] IPv6: ADDRCONF(NETDEV_CHANGE): wlx08107a66a698: link becomes ready
+```
 ## Specs
 
 ```
