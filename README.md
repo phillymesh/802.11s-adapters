@@ -13,6 +13,7 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 | [OURLiNK](ourlink-150m/ourlink-150m.md) | rtl8192cu | Yes | Yes | 2.4Ghz | Available [adaFruit](https://www.adafruit.com/product/1012) |
 | [Alfa AWUS036H](alfa-AWUS036h/alfa-AWUS036h.md) | rt2800usb | Yes | Yes | 2.4Ghz | Detachable Antenna, b,g only, 1000mw |
 | [Alfa AWUS036NH](alfa-awus036nh/alfa-awus036nh.md) | rt2800usb | Yes | Yes | 2.4Ghz | Detachable Antenna b,g,n, 2000mw|
+| [WXTUP AT9271](wxtup-ar9271/wxtup-ar9271.md) | ath9k_htc | Yes | Yes | 2.4GHz | Generic of TP-Link TL-WN722N|
 | ASUS USB-N14 | | | || Reported Meshable, need confirmation |
 
 
