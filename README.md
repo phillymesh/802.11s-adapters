@@ -21,7 +21,7 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 | Device                    | Driver       | 802.11s | AdHoc | Band | Notes      |
 | :------------------------ | :----------- | :------ | :-----| :----| :----------|
 | Raspberry Pi 3 Onboard | brcmfmac | No | Yes | 2.4Ghz | |
-| Orange Pi Zero Onboard | xradio_wlan | No | Yes | 2.4Ghz | Reports 802.11s but does not actually work. Poor quality driver TOPS 10Mbps|
+| [Orange Pi Zero Onboard](orangepizero/orangepizero.md) | xradio_wlan | No | Yes | 2.4Ghz | Reports 802.11s but does not actually work. Poor quality driver TOPS 10Mbps|
 | Tenda U112              | rtl8812au | No | Yes | 2.4/5ghz | AC1300 Device, [Non Standard Driver](https://github.com/xxNull-lsk/rtl8812AU/tree/2087f8addfa255c4c452260d4abc1645293158d4) |
 
 ## Bad Devices 
