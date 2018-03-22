@@ -29,9 +29,15 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 ## Bad Devices 
 | Device                    | Driver       | 802.11s | AdHoc | Band | Notes      |
 | :------------------------ | :----------- | :------ | :-----| :----| :----------|
-| TP-Link TL-WN722N v2      | No Known Drivers | | | 2.5/5Ghz | |
 | [TP-Link AC600 Archer T2UH](tplink-ac600-t2uh/tplink-ac600-t2uh.md) | mt7610u | No | | 2.5/5Ghz| [Non Standard Driver](https://github.com/ulli-kroll/mt7610u) , no 80211s Support, Wont work on some boards |
 | [Toplinkst TOP-5M01](toplinkst-top-5m01/toplinkst-top-5m01.md) | mt7610u | No | | 2.5/5Ghz| [Non Standard Driver](https://github.com/ulli-kroll/mt7610u), Driver Not working |
 | TP-Link TL-WN725N          | r8188eu | No | No | 2.4Ghz | ONLY works with old wireless API, client mode ONLY | 
 | Orange Pi Lite Onboard | rtl8189fs | No | No | 2.4Ghz | ONLY works with old wireless API, client mode ONLY |
 | [NetCore-NM392](netcore-nw392/netcore-nw392.md) | rtl8812AU | No | Not Working | 2.5/5ghz | AC Adapter, [Non Standard Driver](https://github.com/diederikdehaas/rtl8812AU), Adhoc not working |
+
+
+### Unlisted Boards
+
+If you have a board thats not listed please let us know. 
+
+If your looking at a board and its no listed check out [this list of wireless drivers](https://wireless.wiki.kernel.org/en/users/Drivers) for some direction (Mesh column is 80211s).
