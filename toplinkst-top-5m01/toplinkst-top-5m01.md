@@ -6,7 +6,10 @@ Meant for embedded applications - (USB in header format not usb connector)
 
 More Info: [DataSheet](TOP-5M01-product-datasheet-20150922-V1.0.pdf)
 
-**note** on armbian network-manager service must be stopped otherwise commands like iw will lock up
+**Note** on armbian network-manager service must be stopped otherwise commands like iw will lock up
+
+Instructions to compile [mt7610u](../drivers/mt7610u.md)
+
 
 ```
 Wiphy phy2
