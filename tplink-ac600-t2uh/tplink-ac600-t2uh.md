@@ -3,30 +3,8 @@
 * Compiles on and interface comes up on Raspberry Pi
 * Compiles but does not work on Raspberry Pi
 
-# Compile driver for Raspberry Pi
+Instructions to compile [mt7610u](../drivers/mt7610u.md)
 
-```
-apt-get update
-apt-get upgrade
-apt-get install linux-headers
-git clone https://github.com/ulli-kroll/mt7610u.git
-ARCH=arm make
-make installfw
-```
-# Compile driver for OrangePi
-currently does NOT work
-```
-apt-get update
-apt-get upgrade
-apt-get install linux-headers-next-sunxi
-git clone https://github.com/ulli-kroll/mt7610u.git
-
-# line 2072 of chips/mt76x0.c
-# udelay(2200);  to  udelay(2000);
-
-find ./ -type f -exec sed -i -e 's/udelay(2200/udelay(2000/g' {} \;
-make ARCH=arm
-```
 
 ```
 $ iw phy info
