@@ -2,16 +2,9 @@
 driver: rtl8188eu
 
 ## Install Instructions
-**Remember to install kernel headers**
+Instructions to compile [rtl8812eu.md](../drivers/rtl8812eu.md)
+Use abhijeet2096's driver
 
-Compile and install using 
-
-```
-git clone https://github.com/abhijeet2096/TL-WN722N-V2.git
-cd TL-WN722N-V2
-sudo ARCH=arm make all 
-sudo make install
-```
 
 ## Board Information
 ```
