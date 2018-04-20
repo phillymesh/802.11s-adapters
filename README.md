@@ -7,6 +7,7 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 | Device                    | Driver       | 802.11s | AdHoc | Band | Notes      |
 | :------------------------ | :----------- | :------ | :-----| :----| :----------|
 | [TP-LINK TL-WN722N v1](tplink-tl-wn722n-v1/tplink-tl-wn722n-v1.md)| ath9k_htc | Yes | Yes | 2.4Ghz |Detachable Antenna |
+| [TP-LINK TL-WN821N v1,2,3](tl-wn821n/tl-wn821n.md.md)| ath9k_htc | Yes | Yes | 2.4Ghz | |
 | [Toplinkst TOP-GS07](toplinkst-top-gs07/toplinkst-top-gs07.md)    | rt2800usb | Yes | Yes | 2.4/5Ghz |Gets Very Hot      |
 | [Toplinkst RT5572](toplinkst-rt5572/toplinkst-rt5572.md) | rt2800usb | Yes | Yes | 2.5/5Ghz | Headers for USB (no actualy usb plug) Similar to GS07, Daul Antenna not as hot |
 | [Edimax EW-7811Un](edimax-ew-7811un/edimax-ew-7811un.md) | rtl8192cu | Yes | Yes | 2.4Ghz | RPI Workaround for blacklisted module. Works on Stretch |
