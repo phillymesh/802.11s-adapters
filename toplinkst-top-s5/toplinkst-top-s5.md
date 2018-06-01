@@ -1,10 +1,10 @@
-# RT5572
+# Toplinkst TOP-S5
 
-![toplinkst RT5572](toplinkst-rt5572.jpg)
+![toplinkst RT5572](toplinkst-top-s5.jpg)
 
 ## Notes
-Same chipset as the gs07  
-Seems to run cooler then the gs07  
+Same chipset as the TOP-GS07  
+Seems to run cooler then the TOP-GS07  
 ULF antenna connectors for BOTH antennas
 On board Antennas can be enabled by soldering 0ohm resistor
 Meant for embedded applications - (USB in header format not USB connector)  
