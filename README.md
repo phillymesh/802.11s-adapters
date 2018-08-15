@@ -22,9 +22,9 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 | Device                    | Driver       | 802.11s | AdHoc | Band | Notes      |
 | :------------------------ | :----------- | :------ | :-----| :----| :----------|
 | [TP-LINK TL-WN722N v2/3](tplink-tl-wn722n-v2/tplink-tl-wn722n-v2.md)| rtl8188eu | No | Yes | 2.4Ghz |Detachable Antenna [Non Standard Driver](https://github.com/abhijeet2096/TL-WN722N-V2.git) |
-| Raspberry Pi 3 Onboard | brcmfmac | No | Yes | 2.4Ghz | |
+| Raspberry Pi 3 Onboard | brcmfmac | No | Yes | 2.4Ghz, Meshpoing in 20Mhz width only | |
 | [Raspberry Pi 3b+ Onboard](raspberry3bplus/raspberry3bplus.md) | brcmfmac | No | Yes | 2.4Ghz/5Ghz | AC (need confirmation) |
-| [Orange Pi Zero Onboard](orangepizero/orangepizero.md) | xradio_wlan | No | Yes | 2.4Ghz | Reports 802.11s but does not actually work. Poor quality driver TOPS 10Mbps|
+| [Orange Pi Zero Onboard](orangepizero/orangepizero.md) | xradio_wlan | No | No | 2.4Ghz | Reports 802.11s but does not actually work. Poor quality driver TOPS 10Mbps|
 | Tenda U112              | rtl8812au | No | Yes | 2.4/5ghz | AC1300 Device, [Non Standard Driver](https://github.com/xxNull-lsk/rtl8812AU/tree/2087f8addfa255c4c452260d4abc1645293158d4) |
 
 ## Bad Devices 
