@@ -1,13 +1,18 @@
 # Headers for Raspbian
 note `apt-get install linux-headers` no longer works
 
+
+If you have run `apt-get update` since flashing the pi you need to upgrade your kernel first
+
 ```
 apt-get update
 apt-get upgrade
 reboot
-apt-get update
-apt-get install raspberrypi-kernel-headers
+```
 
+Install headers
+```
+apt-get install raspberrypi-kernel-headers
 ```
 
 # Headers for Armbian
