@@ -17,6 +17,7 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 | [WXTUP AT9271](wxtup-ar9271/wxtup-ar9271.md) | ath9k_htc | Yes | Yes | 2.4GHz | Generic of TP-Link TL-WN722N|
 | ASUS USB-N14 | | | || Reported Meshable, need confirmation |
 | Panda wireless PAU06 | | | || Reported Meshable, need confirmation |
+| [Sitecom WL-302](sitecom-wl-302/sitecom-wl-302.md) | rt2800usb | Yes | Yes | 2.4GHz | |
 
 ## Bad Devices That could still be usefull (AP, AdHoc, etc)
 | Device                    | Driver       | 802.11s | AdHoc | Band | Notes      |
