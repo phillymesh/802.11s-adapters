@@ -9,7 +9,7 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 | [TP-LINK TL-WN722N v1](tplink-tl-wn722n-v1/tplink-tl-wn722n-v1.md)| ath9k_htc | Yes | Yes | 2.4Ghz |Detachable Antenna |
 | [TP-LINK TL-WN821N v1,2,3](tl-wn821n/tl-wn821n.md.md)| ath9k_htc | Yes | Yes | 2.4Ghz | |
 | [Toplinkst TOP-GS07](toplinkst-top-gs07/toplinkst-top-gs07.md)    | rt2800usb | Yes | Yes | 2.4/5Ghz |Gets Very Hot      |
-| [Toplinkst TOP-S5](toplinkst-top-s5/toplinkst-top-s5.md) | rt2800usb | Yes | Yes | 2.5/5Ghz | Headers for USB (no actualy usb plug) Similar to GS07, Daul Antenna not as hot |
+| [Toplinkst TOP-S5](toplinkst-top-s5/toplinkst-top-s5.md) | rt2800usb | Yes | Yes | 2.4/5Ghz | Headers for USB (no actual usb plug) Similar to GS07, Dual Antenna not as hot |
 | [Edimax EW-7811Un](edimax-ew-7811un/edimax-ew-7811un.md) | rtl8192cu | Yes | Yes | 2.4Ghz | RPI Workaround for blacklisted module. Works on Stretch |
 | [OURLiNK](ourlink-150m/ourlink-150m.md) | rtl8192cu | Yes | Yes | 2.4Ghz | Available [adaFruit](https://www.adafruit.com/product/1012) |
 | [Alfa AWUS036H](alfa-AWUS036h/alfa-AWUS036h.md) | rt2800usb | Yes | Yes | 2.4Ghz | Detachable Antenna, b,g only, 1000mw |
