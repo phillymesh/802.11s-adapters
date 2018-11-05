@@ -24,6 +24,7 @@ apt-get install linux-headers-next-sunxi
 ## TL-WN722N-V2/3 Support
 ```
 git clone https://github.com/abhijeet2096/TL-WN722N-V2.git
+cd TL-WN722N-V2
 ARCH=arm make
-make install
+sudo make install
 ```
