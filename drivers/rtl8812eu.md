@@ -1,5 +1,6 @@
 # Headers for Raspbian
-note `apt-get install linux-headers` no longer works
+- note `apt-get install linux-headers` no longer works
+- I had issues getting the headers to install at times.  Install headers FIRST before running `apt-get update`
 
 ```
 apt-get update
