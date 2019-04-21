@@ -123,3 +123,5 @@ vht_capab=[MAX-MPDU-11454][SHORT-GI-80]
 # To set to 24 dBm (usual max for firmware):
 sudo iw dev wlx18d6c70fc510 set txpower fixed 2400
 ```
+
+Some devices to not always respond to this immediately, if at all. I can confirm that the rtl8814au devices DO respond to this, however. We should build a table of which do and which do not.
