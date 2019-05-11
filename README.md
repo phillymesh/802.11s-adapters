@@ -37,6 +37,10 @@ Run `sudo bash 80211s-test.sh` to get devics info for your hardware.
 | Orange Pi Lite Onboard | rtl8189fs | No | No | 2.4Ghz | New drivers out, AP seems to crash last tested  |
 | [NetCore-NM392](netcore-nw392/netcore-nw392.md) | rtl8812AU | No | Not Working | 2.4/5ghz | AC Adapter, [Non Standard Driver](https://github.com/diederikdehaas/rtl8812AU), Adhoc not working |
 
+## Untested Devices
+| Device                    | Driver       | 802.11s | AdHoc | Band | Notes      |
+| :------------------------ | :----------- | :------ | :-----| :----| :----------|
+| TP-Link AC600 T2U v2      | mt7650U | No | | 2.4/5Ghz| Non Mainline Drive |
 
 ### Unlisted Boards
 
